@@ -45,28 +45,29 @@ const Contact = () => {
                     {/*Right col*/}
                     <div className='bg-tanleather/50 col-span-3  w-full h-full shadow-xl  shadow-tanleather rounded-xl '>
                         <div className='p-4'>
-                            <form action="">
+                            <form action='https://getform.io/f/4a37df59-81b6-4205-b92a-a2fa58b7f2d7' method='POST'>
                                 <div className='grid md:grid-cols-2 gap-5 w-full py-2'>
+                                <input type='hidden' name='_gotcha' style={{ display: 'none !important' }} />
                                     <div className='flex flex-col'>
                                         <label className='uppercase text-md py-2'>Name</label>
-                                        <input className='border-2 rounded-lg p-3 flex border-brownleather' type="text" />
+                                        <input required name='name' className='border-2 rounded-lg p-3 flex border-brownleather text-gray-800' type="text" />
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className='uppercase text-md py-2'>First Name</label>
-                                        <input className='border-2 rounded-lg p-3 flex border-brownleather' type="text" />
+                                        <input required name='first_name' className='border-2 rounded-lg p-3 flex border-brownleather text-gray-800' type="text" />
                                     </div>
                                 </div>
                                 <div className='flex flex-col'>
                                     <label className='uppercase text-md py-2'>Email</label>
-                                    <input className='border-2 rounded-lg p-3 flex border-brownleather' type="email" />
+                                    <input required name='email' className='border-2 rounded-lg p-3 flex border-brownleather text-gray-800' type="email" />
                                 </div>
                                 <div className='flex flex-col'>
                                     <label className='uppercase text-md py-2'>Subject</label>
-                                    <input className='border-2 rounded-lg p-3 flex border-brownleather' type="text" />
+                                    <input required name='subject' className='border-2 rounded-lg p-3 flex border-brownleather text-gray-800' type="text" />
                                 </div>
                                 <div className='flex flex-col'>
                                     <label className='uppercase text-md py-2'>Message</label>
-                                    <textarea rows='8' className='border-2 rounded-lg p-3 flex border-brownleather' type="text" />
+                                    <textarea required name='message' rows='8' className='border-2 rounded-lg p-3 flex border-brownleather text-gray-800' type="text" />
                                 </div>
                                 <button type='submit' className='my-4 w-full text-xl bg-[#417341] hover:bg-[#67a65d] py-3 tracking-widest'>Send</button>
                             </form>
