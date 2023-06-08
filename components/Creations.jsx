@@ -7,7 +7,7 @@ import pouches from "../public/assets/img2.jpg"
 import threeFinger from "../public/assets/img5.jpg"
 import bracers from "../public/assets/bracers.jpg"
 import bags from "../public/assets/handbag.jpg"
-import itemSet from "../public/assets/itemset.jpg"
+import itemSet from "../public/assets/itemSet.jpg"
 import Link from 'next/link'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 
