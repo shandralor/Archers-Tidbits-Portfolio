@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
-
+import logoImg from '../public/assets/logo_no_text.png'
 
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <div className='flex items-center'>
                     <Link href='/'>
-                    <Image src='/../public/assets/logo_no_text.png' alt='logo' width='100' height='50' className='mt-2' />
+                    <Image src={logoImg} alt='logo' width='100' height='50' className='mt-2' />
                     </Link><Link href='/'>
                         <h1 className='uppercase text-burgundyleather'>Archers Tidbits</h1>
                 </Link>
