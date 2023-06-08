@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import {HiOutlineChevronDoubleUp} from'react-icons/hi'
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+import aboutImg from '../public/assets/about.jpg'
 
 const About = () => {
     return (
@@ -22,7 +23,7 @@ const About = () => {
                     <h2 className='my-8 text-2xl border-t pt-4 text-white'>So if you would like to join me on this every continuing journey of learning and creating, please let me know and I will try to build you what you want!</h2>
                 </div>
                 <div className='w-[65%] md:w-full h-auto m-auto shadow-xl bg-redleather/70 shadow-brownleather p-4 hover:scale-105 ease-in duration-300 rounded-xl flex items-center justify-center'>
-        <Image src='/../public/assets/about.jpg' alt='about' width='400' height='350' className='rounded-xl'/>
+        <Image src={aboutImg} alt='about' width='400' height='350' className='rounded-xl'/>
                 </div>
                 <div className='flex justify-center py-12 sm:hidden'>
                     <Link href='/about/#aboutId' >
