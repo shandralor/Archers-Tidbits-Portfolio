@@ -63,7 +63,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='border-y text-center mt-4  border-redleather'>
-                            <p className=' py-4 tracking-widest font-bold text-lg text-redleather'>Let's Build Your Favorite Gear</p>
+                            <p className=' py-4 tracking-widest font-bold text-lg text-redleather'>I Build Your Favorite Gear</p>
                         </div >
                     </div>
                     <div className='py-4 flex flex-col '>
@@ -82,7 +82,7 @@ const Navbar = () => {
                             </Link>
                         </ul>
                         <div className='mt-5 pt-5 border-t border-redleather '>
-                            <p className='uppercase tracking-widest text-burgundyleather font-bold text-xl '>Let's Connect</p>
+                            <p className='uppercase tracking-widest text-burgundyleather font-bold text-xl '>Want To Connect?</p>
                             <div className='items-center flex justify-between my-8 w-full '>
                                 <div className='text-xl rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:shadow-gray-600 hover:scale-105 hover:text-blue-500'>
                                     <Link href='https://www.facebook.com/MakeItTeck'><FaFacebook /></Link>
