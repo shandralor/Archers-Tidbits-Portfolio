@@ -31,12 +31,12 @@ const Main = () => {
 
             </div>
             <div className='flex flex-col  xl:flex-row  mb-8 xl:justify-between'>
-                <Image src={img1} alt='logo' width='350' height='350' className='rounded-full  my-4 md:my-0  xl:mx-4 mx-auto' />
-                <Image src={img2} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto' />
-                <Image src={img3} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto' />
-                <Image src={img4} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto' />
-                <Image src={img5} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto' />
-                <Image src={img6} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto' />
+                <Image src={img1} alt='logo' width='350' height='350' className='rounded-full  my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
+                <Image src={img2} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
+                <Image src={img3} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
+                <Image src={img4} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
+                <Image src={img5} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
+                <Image src={img6} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
             </div>
         
         </div>
