@@ -14,7 +14,7 @@ export const OrderModal = ({ open, onClose }) => {
                     <input type='text' name='name' required placeholder='Name' className='my-4 p-2 rounded-md text-redleather text-lg' />
                     <input type='email' name='email' required placeholder='Email' className='my-4 p-2 rounded-md text-redleather text-lg' />
                     <p className='mb-2 sm:mb-0 px-1 border-t mt-2 text-2xl md:text-xl'>I want a :</p>
-                    <div className='my-4 flex flex-col md:flex-row border-2 rounded-md p-2 text-xl md:text-lg'>
+                    <div className='my-4 flex flex-col xl:flex-row border-2 rounded-md p-2 text-xl md:text-lg'>
 
                         <label className='mb-2 sm:ml-2'>
                             <input type='radio' name='orderOption' value='Thumb Protector' />
@@ -40,9 +40,9 @@ export const OrderModal = ({ open, onClose }) => {
                     <p className='mb-2 sm:mb-0 px-1 border-t mt-2 text-2xl md:text-xl'>Color preferences: </p>
                     <input type='text' name='leather_color' required placeholder='Leather color preference' className='my-4 p-2 rounded-md text-burgundyleather text-lg' />
                     <input type='text' name='stitching_color' required placeholder='Stitching/cord color preference' className='my-4 p-2 rounded-md text-burgundyleather text-lg' />
-                    <textarea name='other_remarks' placeholder='Other remarks' rows='10' className='my-4 p-2 rounded-md text-burgundyleather text-lg' />
+                    <textarea name='other_remarks' placeholder='Other remarks' rows='6' className='my-4 p-2 rounded-md text-burgundyleather text-lg' />
 
-                    <div className='flex flex-col md:mx-48 font-extrabold '>
+                    <div className='flex flex-col  font-extrabold '>
                         <button type='submit' className='mb-4 bg-[#417341] hover:bg-[#67a65d] py-2 tracking-widest'>Send</button>
                         <button onClick={onClose} className='bg-burgundyleather hover:bg-red-600/90 py-2 tracking-widest'>Cancel</button>
                     </div>

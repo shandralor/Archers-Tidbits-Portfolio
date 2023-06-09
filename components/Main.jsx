@@ -41,7 +41,7 @@ const Main = () => {
                     <Image src={img5} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0  mx-auto shadow-xl shadow-white' />
                     <Image src={img6} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0  mx-auto shadow-xl shadow-white' />
                 </div>
-                <div className='hidden 2xl:flex 2xl:flex-row  2xl:justify-between'>
+                <div className='hidden 2xl:flex 2xl:flex-row  2xl:justify-between 2xl:mt-24'>
                     <Image src={img1} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0 xl:mx-4 mx-auto shadow-xl shadow-white' />
                     <Image src={img2} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0 xl:mx-4 mx-auto shadow-xl shadow-white' />
                     <Image src={img3} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0 xl:mx-4 mx-auto shadow-xl shadow-white' />
