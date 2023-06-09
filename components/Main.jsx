@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { OrderModal } from "../components/OrderModal";
 import img1 from '../public/assets/img1.jpg'
@@ -14,7 +14,7 @@ const Main = () => {
     const [modal, setModal] = useState(false);
 
     return (
-        
+
         <div className='w-full h-screen text-center  pt-32 '>
             <OrderModal open={modal} onClose={() => setModal(false)} />
             <div className='max-w-[1240px]  mx-auto p-2 flex justify-center items-center'>
@@ -30,17 +30,32 @@ const Main = () => {
                 </div>
 
             </div>
-            <div className='flex flex-col  xl:flex-row  mb-8 xl:justify-between'>
-                <Image src={img1} alt='logo' width='350' height='350' className='rounded-full  my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
-                <Image src={img2} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
-                <Image src={img3} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
-                <Image src={img4} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
-                <Image src={img5} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
-                <Image src={img6} alt='logo' width='350' height='350' className='rounded-full my-4 md:my-0  xl:mx-4 mx-auto shadow-xl shadow-white' />
+            <div className='flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-none '>
+                <div className='md:grid-cols-1 2xl:hidden justify-center'>
+                    <Image src={img1} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0  mx-auto shadow-xl shadow-white' />
+                    <Image src={img2} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0  mx-auto shadow-xl shadow-white' />
+                    <Image src={img3} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0  mx-auto shadow-xl shadow-white' />
+                </div>
+                <div className='md:grid-cols-1 2xl:hidden'>
+                    <Image src={img4} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0  mx-auto shadow-xl shadow-white' />
+                    <Image src={img5} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0  mx-auto shadow-xl shadow-white' />
+                    <Image src={img6} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0  mx-auto shadow-xl shadow-white' />
+                </div>
+                <div className='hidden 2xl:flex 2xl:flex-row  2xl:justify-between'>
+                    <Image src={img1} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0 xl:mx-4 mx-auto shadow-xl shadow-white' />
+                    <Image src={img2} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0 xl:mx-4 mx-auto shadow-xl shadow-white' />
+                    <Image src={img3} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0 xl:mx-4 mx-auto shadow-xl shadow-white' />
+                    <Image src={img4} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0 xl:mx-4 mx-auto shadow-xl shadow-white' />
+                    <Image src={img5} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0 xl:mx-4 mx-auto shadow-xl shadow-white' />
+                    <Image src={img6} alt='logo' width='250' height='250' className='rounded-full my-4 2xl:my-0 xl:mx-4 mx-auto shadow-xl shadow-white' />
+                    </div>
             </div>
-        
+
+            
+
+
         </div>
-    
+
     )
 }
 
