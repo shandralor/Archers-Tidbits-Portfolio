@@ -7,7 +7,7 @@ import aboutImg from '../public/assets/about.jpg'
 const About = () => {
     return (
         <div id='aboutId' className='w-full md:h-screen p-2 flex items-center py-16'>
-            <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 mx-12'>
+            <div className='max-w-[1240px] mx-auto md:grid grid-cols-3 gap-8 px-12'>
                 <div className='col-span-2 '>
                     <p className='mt-24 md:mt-8 uppercase text-burgundyleather font-bold tracking-widest text-2xl'>About</p>
                     <h2 className='my-8 text-3xl text-white '>Why I Do What I Do</h2>
