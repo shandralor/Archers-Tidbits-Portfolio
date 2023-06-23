@@ -20,7 +20,7 @@ const Creations = () => {
         <div id='creationId' className='w-full'>
             <div className='max-w-[1440px] mx-12 md:mx-auto px-2 py-36'>
                 <h1 className='mb-4 text-3xl tracking-widest text-burgundyleather uppercase py-4 text-center'>Things I Build</h1>
-                <div className='grid md:grid-cols-4 gap-8'>
+                <div className='grid xl:grid-cols-4 gap-8 md:grid-cols-2 '>
                     <CollectionItemCustom title='Thumb Protector' backgroundImg={thumbProtectors} price=' Base Model Price: 34 €' price2=' 44 € with index protection(in picture)'/>
                     <CollectionItem title='3 Finger Protector' backgroundImg={threeFinger} basePrice='55' />
                     <CollectionItem title='Bow Hand Protector' backgroundImg={bowHandProtectors} basePrice='40' />
