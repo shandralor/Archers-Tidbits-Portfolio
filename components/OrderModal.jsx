@@ -9,8 +9,8 @@ export const OrderModal = ({ open, onClose }) => {
             <div onClick={(e) =>{e.stopPropagation()}} className='text-white w-[75%] md:w-[40%]  bg-brownleather rounded-md p-16 max-h-[95vh] overflow-y-auto relative'>
             <div onClick={onClose} className='cursor-pointer bg-slate-200 absolute top-3 right-3 rounded-full shadow-lg shadow-tanleather p-3 hover:shadow-slate-200 ' ><AiOutlineClose size={25} className='text-burgundyleather'/></div>
                 <h1 className='text-center py-4 text-slate-200 uppercase border-y border-'>What would you like ?</h1>
-                <form action='https://getform.io/f/4a37df59-81b6-4205-b92a-a2fa58b7f2d7' method='POST' className='flex flex-col mt-8'>
-                    <input type='hidden' name='_gotcha' style={{ display: 'none !important' }} />
+                <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="d7b12061-a8f9-4365-be3a-a1caea4e1e51">
                     <input type='text' name='name' required placeholder='Name' className='my-4 p-2 rounded-md text-redleather text-lg' />
                     <input type='email' name='email' required placeholder='Email' className='my-4 p-2 rounded-md text-redleather text-lg' />
                     <p className='mb-2 sm:mb-0 px-1 border-t mt-2 text-2xl md:text-xl'>I want a :</p>
@@ -43,11 +43,13 @@ export const OrderModal = ({ open, onClose }) => {
                     <textarea name='other_remarks' placeholder='Other remarks' rows='6' className='my-4 p-2 rounded-md text-burgundyleather text-lg' />
 
                     <div className='flex flex-col  font-extrabold '>
+                        <div class="h-captcha" data-captcha="true"></div>
                         <button type='submit' className='mb-4 bg-[#417341] hover:bg-[#67a65d] py-2 tracking-widest'>Send</button>
                         <button onClick={onClose} className='bg-burgundyleather hover:bg-red-600/90 py-2 tracking-widest'>Cancel</button>
                     </div>
                 </form>
             </div>
+            <script src="https://web3forms.com/client/script.js" async defer></script>
         </div>
     );
 };
