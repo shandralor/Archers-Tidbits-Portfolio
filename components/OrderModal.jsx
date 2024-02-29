@@ -12,7 +12,7 @@ export const OrderModal = ({ open, onClose }) => {
                 <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="d7b12061-a8f9-4365-be3a-a1caea4e1e51"/>
                     <div class="h-captcha" data-captcha="true"></div>
-                    <div className ="flex flex-row justify-even">
+                    <div className ="flex flex-row justify-evenly">
                     <input type='text' name='name' required placeholder='Name' className='my-4 p-2 rounded-md text-redleather text-lg' />
                     <input type='email' name='email' required placeholder='Email' className='my-4 p-2 rounded-md text-redleather text-lg' />
                     </div>
@@ -42,7 +42,7 @@ export const OrderModal = ({ open, onClose }) => {
                     <p className='mb-2 sm:mb-0 px-1 text-xl md:text-lg'>OPTIONAL (In case of the last option above):</p>
                     <textarea name='specific_order' placeholder='Specify your request' rows='4' className='my-4 p-2 rounded-md text-burgundyleather text-lg' />
                     <p className='mb-2 sm:mb-0 px-1 border-t mt-2 text-2xl md:text-xl'>Color preferences: </p>
-                    <div className= "flex justify-even"> 
+                    <div className= "flex justify-evenly"> 
                         <input type='text' name='leather_color' required placeholder='Leather color preference' className='my-4 p-2 rounded-md text-burgundyleather text-lg' />
                     <input type='text' name='stitching_color' required placeholder='Stitching/cord color preference' className='my-4 p-2 rounded-md text-burgundyleather text-lg' />
                     </div>
