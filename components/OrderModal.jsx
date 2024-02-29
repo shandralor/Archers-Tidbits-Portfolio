@@ -10,7 +10,7 @@ export const OrderModal = ({ open, onClose }) => {
             <div onClick={onClose} className='cursor-pointer bg-slate-200 absolute top-3 right-3 rounded-full shadow-lg shadow-tanleather p-3 hover:shadow-slate-200 ' ><AiOutlineClose size={25} className='text-burgundyleather'/></div>
                 <h1 className='text-center py-4 text-slate-200 uppercase border-y border-'>What would you like ?</h1>
                 <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="d7b12061-a8f9-4365-be3a-a1caea4e1e51">
+                <input type="hidden" name="access_key" value="d7b12061-a8f9-4365-be3a-a1caea4e1e51"/>
                     <input type='text' name='name' required placeholder='Name' className='my-4 p-2 rounded-md text-redleather text-lg' />
                     <input type='email' name='email' required placeholder='Email' className='my-4 p-2 rounded-md text-redleather text-lg' />
                     <p className='mb-2 sm:mb-0 px-1 border-t mt-2 text-2xl md:text-xl'>I want a :</p>
