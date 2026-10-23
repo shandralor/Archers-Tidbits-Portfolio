@@ -9,6 +9,9 @@ import img5 from '../public/assets/img5.jpg'
 import img6 from '../public/assets/img6.jpg'
 
 
+// Orders are paused (see ClosedNotice). Set to true to reopen the order form.
+const ORDERS_OPEN = false;
+
 const Main = () => {
 
     const [modal, setModal] = useState(false);
@@ -16,15 +19,21 @@ const Main = () => {
     return (
 
         <div className='w-full h-screen text-center  pt-32 '>
-            <OrderModal open={modal} onClose={() => setModal(false)} />
+            {ORDERS_OPEN && <OrderModal open={modal} onClose={() => setModal(false)} />}
             <div className='max-w-[1240px]  mx-auto p-2 flex justify-center items-center'>
                 <div className='flex flex-col '>
                     <div className='mx-4'>
                         <h1 className='py-8 text-brownleather'>Hi, my name is <span className='text-tanleather'>Tom</span></h1>
                         <h1 className='py-2 text-brownleather'>I am an archer and a leatherworker</h1>
-                        <button onClick={() => setModal(true)} className='uppercase text-lg tracking-widest my-4 2xl:my-16 text-white bg-tanleather p-2 hover:shadow-lg hover:shadow-[#57403e] hover:bg-burgundyleather'>
-                            Click To Build Your Gear
-                        </button>
+                        {ORDERS_OPEN ? (
+                            <button onClick={() => setModal(true)} className='uppercase text-lg tracking-widest my-4 2xl:my-16 text-white bg-tanleather p-2 hover:shadow-lg hover:shadow-[#57403e] hover:bg-burgundyleather'>
+                                Click To Build Your Gear
+                            </button>
+                        ) : (
+                            <button disabled className='uppercase text-lg tracking-widest my-4 2xl:my-16 text-white bg-tanleather p-2 opacity-60 cursor-not-allowed'>
+                                Orders closed for now
+                            </button>
+                        )}
                     </div>
 
                 </div>
