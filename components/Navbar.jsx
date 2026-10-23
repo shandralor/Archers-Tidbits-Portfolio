@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='fixed z-10 w-full h-25 shadow-xl  mb-2 bg-slate-100'>
+        <div className='fixed z-10 w-full shadow-xl  mb-2 bg-slate-100'>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <div className='flex items-center'>
                     <Link href='/'>
@@ -53,7 +53,7 @@ const Navbar = () => {
             {/*Mobile menu*/}
             <div className={nav ? 'lg:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
                 <div className={nav ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-slate-200 p-10 ease-in duration-500' :
-                    'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
+                    'fixed -left-full top-0 p-10 ease-in duration-500'}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
                             <Image src={logoImg} alt='logo' width='60' height='35' className='mt-2' />
